@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#19191b" />
+    <meta name="description" content="Selected engineering projects by Adam Hemmouda across FPGA vision, networked applications, and manufacturing systems." />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="dark" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <link rel="canonical" href="https://adamhemmouda.com/projects/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Projects | Adam Hemmouda</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Adam Hemmouda home"><span class="wordmark-mark" aria-hidden="true">AH</span><span>Adam Hemmouda</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <a class="active" href="/projects/" aria-current="page">Projects</a>
+        <a href="/experience/">Experience</a>
+        <a href="/skills/">Skills</a>
+        <a class="nav-resume" href="/output/pdf/Adam_Hemmouda_Resume_Public.pdf" download>Résumé</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" id="top">
+        <p class="eyebrow">Projects / 01</p>
+        <h1>Systems built from signal to outcome.</h1>
+        <p class="hero-summary">Selected work connecting hardware, software, test environments, documentation, and the people who operate the finished system.</p>
+      </section>
+
+      <section class="section-shell">
+        <article class="project-card">
+          <div class="project-copy">
+            <p class="project-kicker">Senior capstone · FPGA · Computer vision</p>
+            <h2 class="project-title">FPGA stereo-vision tennis ball tracker</h2>
+            <p>A real-time pipeline for finding a moving ball in stereo images and reconstructing its position in three-dimensional space. The system joined VHDL image processing, camera integration, physics-based simulation, and formal design reviews into one testable architecture.</p>
+            <ul class="project-details">
+              <li>Filtered and thresholded stereo images on a Snickerdoodle FPGA.</li>
+              <li>Detected image centroids, calculated disparity, and reconstructed 3D position.</li>
+              <li>Modeled stereo geometry in MATLAB and built a Blender test environment.</li>
+              <li>Integrated Python camera and control logic with Simulink communication over Wi-Fi.</li>
+            </ul>
+          </div>
+          <div class="system-map" aria-label="System flow: stereo cameras to FPGA vision pipeline to three-dimensional position">
+            <span class="map-label">SYSTEM FLOW / 01</span>
+            <div class="system-node"><small>INPUT</small><strong>Stereo cameras</strong></div>
+            <span class="system-link" aria-hidden="true"></span>
+            <div class="system-node active"><small>PROCESS</small><strong>FPGA vision pipeline</strong></div>
+            <span class="system-link" aria-hidden="true"></span>
+            <div class="system-node"><small>OUTPUT</small><strong>3D position</strong></div>
+            <div class="map-footer"><span>VHDL</span><span>MATLAB</span><span>Python</span><span>Simulink</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-shell">
+        <header class="section-heading">
+          <div><p class="section-index">MANUFACTURING SYSTEMS / 02</p><h2>Tools that improve the work around the hardware.</h2></div>
+          <p>Small engineering systems can remove friction, strengthen traceability, and give production teams a clearer operating picture.</p>
+        </header>
+        <div class="project-brief-grid">
+          <article class="project-brief">
+            <p class="project-kicker">Networked application · TCP/IP · SQL</p>
+            <h3>Engineering approval workflow</h3>
+            <p>Developed an approval application that replaced manual paperwork with assigned signers, authenticated access, database-backed status, and email notifications.</p>
+          </article>
+          <article class="project-brief">
+            <p class="project-kicker">Python · QR codes · Production</p>
+            <h3>Panel traceability and workstation tooling</h3>
+            <p>Created a panel-specific label-printing tool and prototyped an adjustable CAD-modeled workstation to improve traceability and manufacturing execution.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div><p class="section-index">NEXT / 03</p><h2>See the experience behind the systems.</h2></div>
+        <div class="contact-actions"><a class="button button-primary" href="/experience/">View experience</a><a class="button button-secondary" href="/skills/">View skills</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year">2026</span> Adam Hemmouda</p><button id="install-app" type="button" hidden>Install portfolio</button><p id="install-note" class="install-note" role="status" aria-live="polite"></p><a href="#top">Back to top</a></footer>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "Adam Hemmouda Portfolio",
+  "short_name": "Adam H.",
+  "description": "Computer engineering, embedded systems, and technical leadership portfolio.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0b0c",
+  "theme_color": "#19191b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
